@@ -1,0 +1,596 @@
+*{
+	box-sizing: border-box;
+
+}
+
+body{
+	margin: 0;
+	font-family: "Lato", sans-serif;
+
+}
+
+h1, h4{
+	margin: 0;
+	font-weight: lighter;
+}
+
+h3{
+	font-size: 2.5em;
+    letter-spacing: 2px;
+    color: black;
+    font-weight: normal;
+   
+
+}
+h4{
+	font-size: 1.5em;
+	letter-spacing: 0.5px;
+
+}
+
+h5{
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+a{
+	cursor: pointer;
+}
+
+.main{
+	padding-top: 30px;
+	background-repeat: no-repeat;
+	height: 650px;
+	background: 
+		linear-gradient(
+	      rgba(0, 0, 0, 0.85), 
+	      rgba(0, 0, 0, 0.85)
+	    ), 
+	    url('/static/images/sidmalikhomeimage.jpg');
+	
+	
+}
+
+.column{
+	margin: 40px auto 30px auto;
+
+	text-align: center;
+
+	
+}
+
+.quote{
+	font-size: 1.2em;
+	font-style: italic;
+	color: rgba(27,28,29,0.7);
+	padding-left: 3px;
+	padding-right: 3px;
+	text-align: center;
+	max-width: 95%;
+	margin: auto;
+}
+
+.circle{
+	background: #07186d;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+progress{
+	width: 350px;
+	background: #0e279e;
+	height: 5px;
+}
+
+.project{
+	position: relative;
+	width: 375px;
+	height: 200px;
+	margin: auto;
+
+}
+
+.project img{
+	height: 100%;
+}
+
+.hover-text{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+
+}
+
+.hover-text:hover{
+	filter: blur(10px);
+	background-color: rgba(0,0,0,0.85);
+
+}
+
+
+
+.main-banner{
+	color: white;
+	letter-spacing: 1px;
+	font-size: 2em;
+}
+
+.about-content{
+	width: 90%;
+	margin: auto;
+	color: darkgrey;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.skill-progress{
+	text-align: center;
+}
+
+.mypic{
+	width: 180px;
+	height: 195px;
+	border-radius: 50%;
+	background-image: url('/static/images/mypic.png');
+	background-repeat: no-repeat;
+	margin: auto;
+	margin-top: 25px;
+}
+
+.passion, .portfolio{
+	background-color: #EDEEEF;
+}
+
+.container{
+	padding-bottom: 50px;
+	text-align: center;
+	padding-top: 5px;
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;*/
+
+}
+
+.basic-square-but{
+	color: rgba(0,0,0,0.6);
+	font-size: 1em;
+	padding: 15px 40px;
+	background-color: white;
+	border: 2px solid rgba(0,0,0,0.6);
+	transition: .3s;
+}
+
+.basic-square-but:hover{
+	background-color: rgba(0,0,0,0.6);
+	border: 2px solid ;
+	color: white;
+	padding: 15px 50px;
+}
+
+.flex{
+	margin: auto;
+}
+
+
+@media screen and (min-width:700px){
+	.project{
+		width: 450px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.flex{
+		width: 85%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-flow: space-around;
+		align-items: center;
+	}
+
+	.column{
+		width: 30%;
+		padding-right: 15px;
+		padding-left: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+	}
+
+	.connect .flex{
+		max-width: 80%;
+	}
+
+	.project{
+		width: 280px;
+	}
+
+
+	#sidebar-icon{
+		display: none;
+	}
+
+	.navbar-links{
+		display: flex !important;
+	}
+}
+
+@media screen and (min-width:1110px){
+	.project{
+		width: 315px;
+	}
+}
+
+@media screen and (min-width:1210px){
+	.project{
+		width: 340px;
+	}
+}
+
+@media screen and (min-width:1310px){
+	.project{
+		width: 350px;
+	}
+}
+
+@media screen and (min-width:1350px){
+	.project{
+		width: 375px;
+	}
+}
+
+#contact-link{
+	border-radius: 0;
+	border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+
+
+.top-navbar{
+	display: flex;
+	justify-content: flex-end;
+	
+
+}
+ .navbar-links{
+ 	display: none;
+ 	list-style: none;
+ 	margin-right: 15px;
+
+ }
+
+ .navbar-links li{
+ 	padding: 10px 10px;
+ 	margin-right: 25px;
+ 	color: rgba(255, 255, 255, 0.8);
+ 	font-size: 1.2em;
+ 	font-weight: lighter;
+ 	letter-spacing: 3px;
+ 	font-size: 12.5px;
+ 	transition: 0.4s;
+ }
+
+ .navbar-links li:hover{
+ 	background-color: rgba(255, 255, 255, 0.1);
+ 	border-radius: 2px;
+ }
+
+ .icon{
+ 	width: 65px;
+ 	margin-top: 62.5px;
+ 	transition: 0s;
+ }
+
+ .circle:hover{
+ 	transition: 1s;
+ 	transform: rotate(360deg);
+ }
+
+ .passion p, .about p{
+ 	margin: auto;
+ 	margin-top: 20px;
+ 	max-width: 80%;
+ 	font-size: 15px;
+ 	line-height: 1.7;
+ }
+
+ .about p{
+ 	font-size: 17px;
+ 	max-width: 90%;
+ }
+
+ @media screen and (min-width: 850px) {
+ 	.about p{
+ 		max-width: 65%;
+ 	}
+ }
+
+ .connect label{
+ 	display: block;
+ 	text-align: left;
+ 	margin-bottom: 7px;
+ 	color: rgba(0,0,0,0.80);
+ }
+
+ .connect input,
+ .connect label,
+ .connect textarea{
+ 	width: 100%;
+ 	
+
+ }
+
+ .connect input,
+ .connect textarea{
+ 	border: 1px solid #5e5f5f; 
+ 	outline: none;
+ 	padding: 10px 10px;
+ 	font-size: 15px;
+ 	color: rgba(0,0,0,0.80);
+
+ }
+
+ .connect input{
+ 	height: 37px;
+ 	margin-bottom: 7px;
+ }
+
+ .connect textarea{
+ 	height: 168px;
+
+ }
+
+ .connect .column{
+ 	text-align: left;
+ 	padding-right: 10px;
+ 	padding-left: 10px;
+ 	max-width: 95%;
+ }
+
+.connect p{
+	line-height: 1.5;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	max-width: 75%;
+}
+
+.connect h5,
+.connect h4,
+.connect p{
+	margin-right: auto;
+}
+
+.connect .flex{
+	width: 95%;
+	margin-top: 25px;
+}
+
+.connect button{
+	margin-right: auto;
+	margin-top: 20px;
+	width: 135px;
+	height: 45px;
+	background: none;
+	color: rgba(0,0,0,0.8);
+	font-size: 15px;
+	border: 2px solid #5e5f5f;
+	transition: .3s;
+}
+
+.connect button:hover{
+	background-color: #5e5f5f;
+	color: white;
+}
+
+.footer{
+	padding: 40px 30px;
+	background-color: #26262a;
+	text-align: center;
+	color: rgba(255,255,255, 0.65);
+	font-size: 13px;
+}
+
+.footer-links{
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+.footer-links li{
+	border-radius: 2px;
+	padding: 7px 7px;
+	color: rgba(255, 255, 255, .9);
+	font-weight: lighter;
+	margin: 5px 10px;
+	font-size: 13px;
+	letter-spacing: 1.5px;
+	transition: .5s;
+}
+
+.footer-links li:hover{
+	background-color: rgba(255,255,255,0.25);
+}
+
+
+progress[value]::-webkit-progress-bar {
+  background-color: lightgrey;
+  border-radius: 2px;
+
+}
+
+.prog{
+	max-width: 90%;
+	width: 500px;
+	height: 10px;
+	border-radius: 2px;
+	background-color: rgba(0,0,0,0.15);
+	position: relative;
+	margin: auto;
+}
+
+.val{
+	position: absolute;
+	background-color: #080898;
+	height: 100%;
+	width: 75%;
+	left: 0;
+	border-radius: 2px;
+}
+
+.skills .column p{
+	margin-top: 100px;
+}
+
+.skills h5{
+	margin-bottom: 12px;
+}
+
+.project img{
+	width: 100%;
+}
+
+.hover-text h5{
+	color: white;
+	opacity: 0;
+	font-weight: lighter;
+}
+
+.plain-but{
+	border: 2px solid white;
+	background: none;
+	padding: 5px 10px;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	opacity: 0;
+	transition: .2s;
+}
+
+.plain-but:hover{
+	background-color: white;
+	color: black;
+}
+
+.hover-text p{
+	font-weight: lighter;
+	color: white;
+	letter-spacing: 1px;
+	opacity: 0;
+	font-style: italic;
+}
+
+/*.hover-text p,
+.hover-text button{
+	transition: 1s;
+}*/
+
+.main h6{
+	margin: 150px auto 10px auto;
+	max-width: 95%;
+	text-align: center;
+	color: white;
+	font-size: 95px;
+	font-weight: normal;
+}
+
+.main p{
+	font-style: italic;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: 'Rubik', serif;
+}
+
+a{
+	text-decoration: none;
+	color : rgba(255, 255, 255, 0.8);
+}
+
+.top-navbar li{
+	cursor: pointer;
+}
+
+#sidebar-icon{
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	margin-right: 15px;
+	margin-bottom: 40px;
+}
+
+.sidebar{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	overflow-x: hidden;
+	background-color: #212121;
+	padding-top: 60px;
+	transition: .5s;
+
+}
+
+.sidebar a{
+	padding: 10px 8px 10px 32px;
+    text-decoration: none;
+    font-size: 13px;
+    color: rgba(255,255,255,.8);
+    display: block;
+    transition: 0.3s;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+#close-icon{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.skills p{
+	margin-bottom: 35px;
+}
+
+.sid-logo{
+	font-family: 'Cormorant Garamond', serif;
+	margin: 4px 0px;
+    color: #c7cec7;
+    font-size: 50px;
+    margin-bottom: 12px;
+}
+
+.footer .sid-logo{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
