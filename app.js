@@ -7,7 +7,7 @@ app.use('/static', express.static(path.join(__dirname , '/public')))
 
 
 app.listen(process.env.PORT || 3001, function(){
-	console.log('sidmalik.com running on port '+port+' :)');
+	console.log('sidmalik.com running');
 })
 
 app.get('/', function(req, res){
