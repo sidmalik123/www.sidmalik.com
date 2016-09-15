@@ -319,7 +319,7 @@ progress{
 /*media queries*/
  @media screen and (min-width: 850px) {
  	.about p{
- 		max-width: 65%;
+ 		max-width: 65% !important;
  	}
  }
 
