@@ -42,7 +42,7 @@ app.post('/contact', function(req, res){
 		   		console.log(error)
 		       res.status(500).json({message : 'fail'})
 		   }else{
-		   		console.log(message)
+		   		console.log(response)
 		       res.json({message : 'success'})
 		   }
 		   
