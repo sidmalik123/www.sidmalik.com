@@ -30,7 +30,7 @@ h4{
 }
 
 h5{
-	font-size: 1.1em;
+	font-size: .9em;
 	font-weight: normal;
 }
 
@@ -466,7 +466,7 @@ progress[value]::-webkit-progress-bar {
 .prog{
 	max-width: 90%;
 	width: 500px;
-	height: 10px;
+	height: 5px;
 	border-radius: 2px;
 	background-color: rgba(0,0,0,0.15);
 	position: relative;
@@ -475,7 +475,7 @@ progress[value]::-webkit-progress-bar {
 
 .val{
 	position: absolute;
-	background-color: #080898;
+	background-color: #239e88;
 	height: 100%;
 	width: 75%;
 	left: 0;
@@ -594,6 +594,11 @@ a{
 	height: 20px;
 	cursor: pointer;
 }
+
+.error-input{
+	background-color: rgba(244, 67, 54, 0.25);
+}
+
 
 
 

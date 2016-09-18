@@ -1,3 +1,7 @@
+String.prototype.isEmpty = function(text){
+  return (this.length === 0 || !this.trim())
+}
+
 $("a").on('click', function(event) {
 
   // Make sure this.hash has a value before overriding default behavior
@@ -41,3 +45,58 @@ $('#fname').on('keyup', function(){
   $('#close-icon').on('click', function(){
     $('.sidebar').css('width', '0')
   })
+
+
+$('#sendMessage').on('click', function(){
+  var emailId = $('#emailId').val();
+  var fname = $('#fname').val();
+  var lname = $('#lname').val();
+  var message = $('#message').val();
+
+  var emailForm = {
+    'emailId' : emailId,
+    'fname' : fname,
+    'lname' : lname,
+    'message' : message
+  }
+
+  if(emailId.isEmpty() || fname.isEmpty() || lname.isEmpty() || message.isEmpty()){
+    if(emailId.isEmpty()){
+      $('#emailId').addClass('error-input')
+    }
+    if(fname.isEmpty()){
+      $('#fname').addClass('error-input')
+    }
+    if(lname.isEmpty()){
+      $('#lname').addClass('error-input')
+    }
+    if(message.isEmpty()){
+      $('#message').addClass('error-input')
+    }
+  }else{
+    $.ajax({
+      url : '/contact',
+      type :'POST',
+      data: JSON.stringify(emailForm),
+      contentType: 'application/json',
+      success : function(res){
+        alert('Thank you for contacting me, I will get back to you');
+      },
+      error: function(res){
+        alert('error in sending message'); 
+      }
+    })
+  } 
+})
+
+
+
+
+$('input, textarea').focus(function(){
+  var input = $(this);
+  if(input.hasClass('error-input')){
+    input.removeClass('error-input')
+  }
+})
+
+

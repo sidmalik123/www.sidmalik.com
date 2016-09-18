@@ -1,8 +1,12 @@
 var express = require('express');
 var path = require('path');
 var app = express();
+var parser = require('body-parser')
 
-
+app.use(parser.urlencoded({
+  extended: true
+}));
+app.use(parser.json());
 app.use('/static', express.static(path.join(__dirname , '/public')))
 
 
@@ -14,3 +18,32 @@ app.get('/', function(req, res){
 	res.sendFile(path.join(__dirname, 'public', 'html', 'index.html'))
 })
 
+var nodemailer = require("nodemailer");
+
+var smtpTransport = nodemailer.createTransport("SMTP",{
+   service: "Gmail",  
+   auth: {
+       user: "siddharthmalik123@gmail.com",
+       pass: "10p15xs0069"
+   }
+});
+
+
+app.post('/contact', function(req, res){
+	var email = req.body
+
+	smtpTransport.sendMail({ 
+	   from: "sidmalik.com <siddharthmalik123@l@gmail.com>",
+	   to: "Siddharth <sidmalik123@icloud.com>", 
+	   subject: "New message on sidmalik.com", 
+	   text: email.fname + " " + email.lname + " " + email.emailId + " said:" + email.message
+	}, function(error, response){
+		   if(error){
+		       res.status(500).json({message : 'fail'})
+		   }else{
+		       res.json({message : 'success'})
+		   }
+		   
+		   smtpTransport.close();
+		})
+})
