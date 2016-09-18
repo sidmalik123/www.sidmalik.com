@@ -475,7 +475,7 @@ progress[value]::-webkit-progress-bar {
 
 .val{
 	position: absolute;
-	background-color: #239e88;
+	background-color: #00B5AD;
 	height: 100%;
 	width: 75%;
 	left: 0;
@@ -494,8 +494,10 @@ progress[value]::-webkit-progress-bar {
 	width: 100%;
 }
 
-.hover-text h5{
+.hover-text h4{
 	color: white;
+	font-size: 20px;
+	margin-top: 35px;
 	opacity: 0;
 	font-weight: lighter;
 }

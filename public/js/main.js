@@ -90,13 +90,23 @@ $('#sendMessage').on('click', function(){
 })
 
 
-
-
 $('input, textarea').focus(function(){
   var input = $(this);
   if(input.hasClass('error-input')){
     input.removeClass('error-input')
   }
 })
+
+$('#close-icon').on('mouseover', function(){
+  $(this).addClass('animated flip')
+})
+
+$('#close-icon').on('mouseout', function(){
+  $(this).removeClass('animated flip')
+})
+
+
+
+
 
 
