@@ -39,8 +39,10 @@ app.post('/contact', function(req, res){
 	   text: email.fname + " " + email.lname + " " + email.emailId + " said:" + email.message
 	}, function(error, response){
 		   if(error){
+		   		console.log(error)
 		       res.status(500).json({message : 'fail'})
 		   }else{
+		   		console.log(message)
 		       res.json({message : 'success'})
 		   }
 		   
