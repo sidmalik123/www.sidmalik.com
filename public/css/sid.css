@@ -465,9 +465,9 @@ progress{
 	}
 
 	#top-logo{
-		width: 70px;
-		height: 70px;
-		margin-top: -15px;
+		width: 67px !important;
+		height: 67px !important;
+		margin-top: -15px !important;
 	}
 }
 
