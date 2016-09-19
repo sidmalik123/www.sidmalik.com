@@ -118,7 +118,7 @@ a{
  	letter-spacing: 3px;
  	font-size: 12.5px;
  	transition: 0.4s;
- 	height: 40px;
+ 	height: 37.5px;
  }
 
  .navbar-links li:hover{
@@ -332,6 +332,16 @@ progress{
 	background-color: #5e5f5f;
 	color: white;
 }
+
+.social-links{
+	display: flex;
+	margin-right: auto;
+}
+
+.social-links img{
+	width: 37px;
+	margin-right: 7px;
+}
 /*contact section ---*/
 
 
@@ -468,6 +478,10 @@ progress{
 		width: 67px !important;
 		height: 67px !important;
 		margin-top: -15px !important;
+	}
+
+	h4{
+		font-size: 1.25em;
 	}
 }
 
