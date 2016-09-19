@@ -483,6 +483,14 @@ progress{
 	h4{
 		font-size: 1.25em;
 	}
+
+	.hover-text{
+		display: none;
+	}
+
+	.project{
+		cursor: pointer;
+	}
 }
 
 /*media ---*/
