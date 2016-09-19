@@ -69,9 +69,25 @@ a{
 	      rgba(0, 0, 0, 0.85), 
 	      rgba(0, 0, 0, 0.85)
 	    ), 
-	    url('/static/images/sidmalikhomeimage.jpg');
-	
-	
+	    url('/static/images/sidmalikhomeimage.jpg');	
+}
+
+.main h1{
+	margin: 150px auto 10px auto;
+	max-width: 95%;
+	text-align: center;
+	color: white;
+	font-size: 95px;
+	font-weight: normal;
+}
+
+.main p{
+	font-style: italic;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: 'Rubik', serif;
 }
 
 /*navbar*/
@@ -102,6 +118,7 @@ a{
  	letter-spacing: 3px;
  	font-size: 12.5px;
  	transition: 0.4s;
+ 	height: 40px;
  }
 
  .navbar-links li:hover{
@@ -197,6 +214,44 @@ progress{
 	background-color: rgba(0,0,0,0.85);
 
 }
+
+.project img{
+	width: 100%;
+}
+
+.hover-text h4{
+	color: white;
+	font-size: 18px;
+	margin-top: 45px;
+	opacity: 0;
+	font-weight: lighter;
+}
+
+.plain-but{
+	border: 2px solid white;
+	background: none;
+	padding: 5px 10px;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	opacity: 0;
+	transition: .2s;
+}
+
+.plain-but:hover{
+	background-color: white;
+	color: black;
+}
+
+.hover-text p{
+	font-weight: lighter;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 13.5px;
+	opacity: 0;
+	font-style: italic;
+	margin-bottom: 20px;
+}
 /*portfolio section ---*/
 
 
@@ -287,6 +342,8 @@ progress{
 	text-align: center;
 	color: rgba(255,255,255, 0.65);
 	font-size: 13px;
+	display: flex;
+	flex-direction: column;
 }
 
 .footer-links{
@@ -294,7 +351,7 @@ progress{
 	list-style: none;
 	justify-content: center;
 	flex-wrap: wrap;
-
+	margin-left: -35px;
 }
 
 .footer-links li{
@@ -310,6 +367,13 @@ progress{
 
 .footer-links li:hover{
 	background-color: rgba(255,255,255,0.25);
+}
+
+#footer-logo{
+	width: 70px;
+    height: 70px;
+    margin: auto;
+    margin-bottom: 18px;
 }
 /*footer section ---*/
 
@@ -388,6 +452,22 @@ progress{
 @media screen and (min-width:1350px){
 	.project{
 		width: 375px;
+	}
+}
+
+@media screen and (max-width:500px){
+	.main h1{
+		font-size: 70px;
+	}
+
+	.main p{
+		font-size: 14px;
+	}
+
+	#top-logo{
+		width: 70px;
+		height: 70px;
+		margin-top: -15px;
 	}
 }
 
@@ -490,61 +570,11 @@ progress[value]::-webkit-progress-bar {
 	margin-bottom: 12px;
 }
 
-.project img{
-	width: 100%;
-}
-
-.hover-text h4{
-	color: white;
-	font-size: 20px;
-	margin-top: 35px;
-	opacity: 0;
-	font-weight: lighter;
-}
-
-.plain-but{
-	border: 2px solid white;
-	background: none;
-	padding: 5px 10px;
-	color: white;
-	font-size: 16px;
-	cursor: pointer;
-	opacity: 0;
-	transition: .2s;
-}
-
-.plain-but:hover{
-	background-color: white;
-	color: black;
-}
-
-.hover-text p{
-	font-weight: lighter;
-	color: white;
-	letter-spacing: 1px;
-	opacity: 0;
-	font-style: italic;
-}
 
 
 
-.main h6{
-	margin: 150px auto 10px auto;
-	max-width: 95%;
-	text-align: center;
-	color: white;
-	font-size: 95px;
-	font-weight: normal;
-}
 
-.main p{
-	font-style: italic;
-	color: white;
-	text-align: center;
-	font-size: 18px;
-	letter-spacing: 2px;
-	font-family: 'Rubik', serif;
-}
+
 
 a{
 	text-decoration: none;
@@ -599,6 +629,14 @@ a{
 
 .error-input{
 	background-color: rgba(244, 67, 54, 0.25);
+}
+
+#top-logo{
+	margin-right: auto;
+	margin-left: 20px;
+	margin-top: -5px;
+	width: 87px;
+	height: 87px;
 }
 
 
