@@ -488,9 +488,9 @@ progress{
 		font-size: 1.25em;
 	}
 
-	.hover-text{
+	/*.hover-text{
 		display: none;
-	}
+	}*/
 
 	.project{
 		cursor: pointer;
