@@ -105,12 +105,7 @@ $('#close-icon').on('mouseout', function(){
   $(this).removeClass('animated flip')
 })
 
-// $('.project').on('click', function(){
-//   var href = $(this).attr('data-href')
-//   if(window.innerWidth < 500){
-//     window.location.href = href;
-//   }
-// })
+
 
 
 
